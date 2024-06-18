@@ -25,7 +25,7 @@ public:
 	}
 	int get_element(int nom)
 	{
-		if (nom>=0 and nom < kol)
+		if (nom >= 0 and nom < kol)
 		{
 			return mas[nom];
 		}

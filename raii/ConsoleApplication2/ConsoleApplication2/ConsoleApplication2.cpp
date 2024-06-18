@@ -35,7 +35,7 @@ public:
 	bool operator = (massiv& a)
 	{
 		delete[] mas;
-		kol = sizeof(a.mas) / sizeof(int);
+		kol = a.kol;
 		mas = new int[kol];
 		for (int i = 0; i < kol; i++)
 		{
@@ -49,7 +49,7 @@ public:
 		std::cout << "Массив: "<< endl;
 		for (int i = 0; i < kol; i++)
 		{
-			std::cout<<mas[i]<<" ";
+			std::cout << mas[i] << " ";
 		}
 		std::cout << endl;
 	}
